@@ -30,7 +30,7 @@ export default function Home() {
   };
 
   const gptPostClient = axios.create({
-    baseURL: "https://api.openai.com/v1/chat/completions",
+    baseURL: "https://api.openai.com/v1/completions",
   });
 
   const returnResults = async () => {
@@ -38,15 +38,15 @@ export default function Home() {
     const prompt =
       "You will become the most well published and well known expert" +
       filter +
-      "professor at an Ivy League University. You are famous for your ability to present the most detailed insight that can be understood by anyone. I am a new first year student enrolled in your course. Please create a comprehensive, detailed, organized syllabus to teach me" +
+      "professor at an Ivy League University. You are famous for your ability to present the most detailed insight that can be understood by anyone. I am a student coming to you for help. Please create a comprehensive, detailed, organized list so I can teach myself" +
       learn +
-      ".Please include detailed examples and step-by-step lists to demonstrate concepts when starting the response say welcome to the course at MapAI University";
+      ".Please include detailed examples and step-by-step lists to demonstrate concepts when starting the response say Here is your roadmap made by MapAI";
 
     gptPostClient
       .post(
         "",
         {
-          model: "gpt-3.5-turbo-0301",
+          model: "text-davinci-003",
           prompt: prompt,
           max_tokens: 1000,
           temperature: 0,
@@ -54,7 +54,8 @@ export default function Home() {
         {
           headers: {
             "Content-Type": "application/json",
-            Authorization: "Bearer " + process.env.OPEN_AI_API_KEY,
+            Authorization:
+              "Bearer " + "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",
           },
         }
       )
@@ -118,7 +119,9 @@ export default function Home() {
             {" "}
             Create a Roadmap
           </Button>
-          <Container>{data}</Container>
+          <Container>
+            <Text>{data}</Text>
+          </Container>
         </VStack>
       </Center>
     </>
