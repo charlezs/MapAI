@@ -12,10 +12,12 @@ import {
   Text,
   Button,
   Heading,
+  Icon,
 } from "@chakra-ui/react";
-import { motion } from "framer-motion";
 import { AnchorHTMLAttributes, SVGAttributes, useRef } from "react";
+import NextLink from "next/link";
 
+import { BsFillPinMapFill } from "react-icons/bs";
 const HamburgerIcon = (props: SVGAttributes<SVGSVGElement>) => (
   <svg
     viewBox="0 0 80 62"
@@ -48,8 +50,10 @@ export const Navigation = () => {
               height="4.5rem"
               width="6xl"
             >
-              <Heading>MapAi</Heading>
-              <Button>Launch</Button>
+              <NextLink href="/">
+                <Heading>MapAi</Heading>
+              </NextLink>
+              <Icon boxSize={6} as={BsFillPinMapFill} />
             </Flex>
           </Center>
         </Box>
