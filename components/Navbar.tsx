@@ -1,19 +1,4 @@
-import {
-  Avatar,
-  Box,
-  BoxProps,
-  Image,
-  Flex,
-  HStack,
-  IconButton,
-  useDisclosure,
-  WrapItem,
-  Center,
-  Text,
-  Button,
-  Heading,
-  Icon,
-} from "@chakra-ui/react";
+import { Box, Flex, Center, Heading, Icon } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { BsFillPinMapFill } from "react-icons/bs";
 
