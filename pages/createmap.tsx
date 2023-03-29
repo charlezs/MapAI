@@ -38,7 +38,7 @@ export default function Home() {
     const prompt =
       "You will become the most well published and well known expert" +
       filter +
-      "professor at an Ivy League University. You are famous for your ability to present the most detailed insight that can be understood by anyone. I am a student coming to you for help. Please create a comprehensive, detailed, organized list so I can teach myself" +
+      " professor at an Ivy League University. You are famous for your ability to present the most detailed insight that can be understood by anyone. I am a student coming to you for help. Please create a comprehensive, detailed, organized list so I can teach myself" +
       learn +
       ".Please include detailed examples and step-by-step lists to demonstrate concepts when starting the response say Here is your roadmap made by MapAI";
 
@@ -65,7 +65,7 @@ export default function Home() {
       });
     setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 5000);
   };
 
   return (
@@ -78,7 +78,7 @@ export default function Home() {
       </Head>
       <Center>
         <VStack maxW="6xl" h="100vh" gap="50px">
-          <Heading>Create your personal roadmap</Heading>
+          <Heading mt="10">Create your personal roadmap</Heading>
           <FormControl id="prompt" fontSize={"2xl"} pt="10">
             <Box>
               <Text>What space is your roadmap for?</Text>
@@ -119,9 +119,9 @@ export default function Home() {
             {" "}
             Create a Roadmap
           </Button>
-          <Container>
+          <Box padding="6" bg="white" borderRadius="lg">
             <Text>{data}</Text>
-          </Container>
+          </Box>
         </VStack>
       </Center>
     </>
