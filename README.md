@@ -29,5 +29,4 @@ if you want to run this yourself...
 
 - If you found this interesting send a start my way!
 - and yes! lot's of things to be changed but was a good experience to build :()
-## Connect with me 🤗
 
