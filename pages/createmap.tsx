@@ -113,6 +113,7 @@ export default function Home() {
             bg="#4FAD27"
             color="white"
             size="lg"
+            h="20px"
             onClick={returnResults}
             isLoading={isLoading}
           >
