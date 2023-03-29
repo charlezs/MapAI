@@ -21,7 +21,7 @@ It supplies you with in depth step by step steps to accomplish what you want.
 if you want to run this yourself...
 
 1. clone the repo
-2. create your own .env to house your OPEN_AI_API_KEY
+2. create your own .env to house your `OPEN_AI_API_KEY`
 3. then run `npm i`
 4. and finally run `npm run dev`
 
