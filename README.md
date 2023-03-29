@@ -9,7 +9,7 @@ It supplies you with in depth step by step steps to accomplish what you want.
 
 ## How to use
 
-1. Visit the live demo @ [MapAi]https://map-ai.vercel.app/().
+1. Visit the live demo @ [MapAi](https://map-ai.vercel.app/).
 
 
 
